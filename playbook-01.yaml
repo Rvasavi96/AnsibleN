@@ -1,2 +1,9 @@
-##hi iam learning ansible 
-hi ,ansible 
+##playbook 
+name: ping the node 
+host: mongodb 
+## This is the list of task/modules/collections
+tasks:
+- name: pinging the server 
+ #this is the map 
+ ansible.builtin.ping:
+ 
