@@ -1,6 +1,6 @@
 -name: variables from files 
 #managing the ansible server itself
- hosts: localhost 
+ hosts: 172.31.86.4 
  var_files: #here we can give list of variables
  - variables.yaml
  tasks:
