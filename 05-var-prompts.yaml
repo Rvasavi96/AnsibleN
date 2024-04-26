@@ -1,6 +1,6 @@
 ##this is for confidential info like credentials
 -name: variables from prompt
- hosts: localhost
+ hosts: 52.90.6.198
  vars_prompt:
  - name:USERNAME
    prompt: plase enter your user name
