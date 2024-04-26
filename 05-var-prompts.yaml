@@ -1,0 +1,16 @@
+##this is for confidential info like credentials
+-name: variables from prompt
+ hosts: localhost
+ vars_prompt:
+ - name:USERNAME
+   prompt: plase enter your user name
+   private: false #you can see the value which your entered
+ - name: PASSWORD 
+   prompt: plaese enter your password
+   private: true #you cant see the value which your entered 
+ tasks:
+ - name: print the variable values 
+   ansible.builtin.debug:
+     msg: "username: {{USERNAME}},password: {{PASSWORD}}" 
+
+
